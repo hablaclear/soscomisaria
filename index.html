@@ -37,24 +37,23 @@
       font-size: 16px;
       line-height: 1.6;
     }
+    .button {
+      display: block;
+      text-align: center;
+      padding: 1em;
+      background: #d32f2f;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 40px auto;
+      max-width: 300px;
+    }
     footer {
       text-align: center;
       padding: 20px;
       background-color: #eee;
       font-size: 14px;
-    }
-    .notice {
-      color: gray;
-      font-size: 14px;
-      text-align: center;
-      margin-top: 20px;
-    }
-    chatgpt-chatbot {
-      display: block;
-      margin: 40px auto;
-      width: 100%;
-      max-width: 700px;
-      height: 600px;
     }
   </style>
 </head>
@@ -69,19 +68,11 @@
     <h2>¿Estás en una comisaría y no sabes qué hacer?</h2>
     <p>Este asistente virtual te puede orientar según la comisaría donde estés.</p>
     <p>No necesitas ingresar tus datos personales. El sistema funciona automáticamente dependiendo de tu distrito y situación.</p>
-    <p><strong>Disponible 24/7.</strong> Usa el chat a continuación para empezar.</p>
+    <p><strong>Disponible 24/7.</strong> Usa el botón a continuación para iniciar el chat:</p>
 
-    <!-- Widget GPT integrado -->
-    <script src="https://chat.openai.com/embed.js" async></script>
-    <chatgpt-chatbot
-      gpt-id="g-686b44001dfc8191a2a481cee79d962f"
-      chatbot-name="S.O.S. Comisaría"
-      user-id="anon">
-    </chatgpt-chatbot>
-
-    <p class="notice">
-      ⚠️ Si el chat no aparece, asegúrate de estar <a href="https://chat.openai.com" target="_blank">logueado en ChatGPT</a>.
-    </p>
+    <a href="https://chat.openai.com/g/g-686b44001dfc8191a2a481cee79d962f-s-o-s-comisaria" target="_blank" class="button">
+      Iniciar chat con S.O.S. Comisaría
+    </a>
   </main>
 
   <footer>
